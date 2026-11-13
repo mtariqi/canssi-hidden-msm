@@ -1,0 +1,6 @@
+,Training (index < 2019),Temporal holdout
+N,3724,577
+"Age, mean (SD)",78.2 (6.9),77.8 (6.9)
+"Male, n (%)",1838 (49.4),277 (48.0)
+"Chronic conditions, median [IQR]",3 [2-4],3 [2-4]
+"Prior-year physician visits, median [IQR]",11 [7-15],11 [7-15]

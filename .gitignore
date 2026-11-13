@@ -1,0 +1,12 @@
+# Never commit real data. Only synthetic data may be versioned (and is regenerated).
+data/
+!data/README.md
+results/fits/
+results/hmc/
+*.sas7bdat
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.venv/

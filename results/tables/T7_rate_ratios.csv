@@ -1,0 +1,14 @@
+label,hr,lo,hi
+Admission: Age (per SD),1.11,1.066,1.153
+Admission: Male sex,1.029,0.945,1.119
+Admission: Comorbidity (per SD),1.171,1.12,1.225
+Admission: Prior utilisation (per SD),1.41,1.341,1.478
+Death: Age (per SD),1.485,1.354,1.627
+Death: Male sex,1.118,0.932,1.356
+Death: Comorbidity (per SD),1.252,1.14,1.372
+Death: Prior utilisation (per SD),1.164,1.048,1.296
+Encounter rate: Prior utilisation (per SD),1.645,1.612,1.679
+Encounter rate: Comorbidity (per SD),1.018,0.998,1.038
+Encounter rate: unstable vs stable (exp alpha),2.422,2.285,2.585
+Admission: unstable vs stable,6.511,5.665,7.458
+Community death: unstable vs stable,9.502,6.249,14.495

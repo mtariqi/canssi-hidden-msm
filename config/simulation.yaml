@@ -1,0 +1,28 @@
+# Simulation protocol (SAP section 6). Pre-register before running `full`.
+master_seed: 20261112
+n_draws: 80          # Laplace posterior draws per fit for estimand intervals
+n_std: 200           # covariate profiles used for standardisation per replicate
+
+full:                # the preregistered design; run on the compute allocation
+  sizes: [2000, 10000]
+  replicates: 200
+  boundary_scenarios:          # expanded after profiling (SAP section 6)
+    - n2000_weak_inf_het
+    - n2000_weak_noninf_het
+  boundary_replicates: 500
+
+pilot:               # scaled-down run used to profile runtime and debug (laptop / CI)
+  sizes: [1000, 2000]
+  replicates: 4
+
+stress_tests:        # each run at the reference scenario: strong, informative, heterogeneity
+  reference_n: 2000
+  replicates: {pilot: 2, full: 200}
+  cases:
+    dependent_indicators: {dep_sd: 1.0}
+    missing_covariates_10pct: {missing_cov_frac: 0.10}
+    missing_covariates_30pct: {missing_cov_frac: 0.30}
+    eligibility_censoring: {elig_rate: 0.000822}    # ~0.30 per person-year
+    administrative_censoring: {admin_frac: 0.40}
+# Not yet implemented (tracked as GitHub issues): time-since-state-entry
+# (semi-Markov) effects and rare-transition scenarios.

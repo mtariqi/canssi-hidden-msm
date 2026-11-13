@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "hmsm: Bayesian latent multi-state methods for health-care trajectories in older adults with multimorbidity"
+version: 0.1.0
+authors:
+  - name: "[Statistics/biostatistics lead]"
+  - name: "[Clinical/health-services lead]"
+  - name: "[Shared trainee]"
+license: MIT

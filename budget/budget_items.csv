@@ -1,0 +1,5 @@
+item,provider,basis,unit_cost_cad,units,unit,start_month,end_month,amount_cad,status
+Data-access licence,ICES Data & Analytic Services (or approved custodian),"One linked-cohort access allocation (DAD, NACRS, OHIP, RPDB); final cohort and years to be confirmed",3000,1,allocation,2,2,3000,Estimate pending written ICES quotation
+Secure computing,Approved provider,Forward recursion / Bayesian fitting / simulation; CAD 200 per month x 6 months,200,6,month,5,10,1200,Unit price to be confirmed
+Secure storage,Approved provider,Encrypted workspace + retained outputs; CAD 50 per month x 10 months,50,10,month,3,12,500,Capacity and rate to be specified by provider
+Additional computing,Approved provider,Prespecified robustness scenarios; purchase only against actual systems charges,300,1,allocation,11,11,300,Contingent

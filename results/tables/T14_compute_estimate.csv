@@ -1,0 +1,5 @@
+cohort_size,replicates_total,seconds_per_replicate,cpu_hours,basis
+2000,2200,22.7,13.9,measured
+10000,1600,83.7,37.2,linear extrapolation from pilot
+2000,1000,22.7,6.3,stress tests
+TOTAL,4800,,57.4,x1.5 safety margin recommended

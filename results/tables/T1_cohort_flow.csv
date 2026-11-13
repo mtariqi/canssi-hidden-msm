@@ -1,0 +1,8 @@
+step,n
+Persons with >=1 hospital record (all institution types),14000
+  with an acute-care spell (non-acute excluded; transfers collapsed),12824
+  with a live acute discharge in the accrual window (first = index),8213
+  aged >= 65 at index,7658
+  continuously eligible for 730-day lookback,5862
+  with >= 2 chronic conditions in lookback,4401
+Final analytic cohort,4301

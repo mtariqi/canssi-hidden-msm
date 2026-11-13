@@ -1,0 +1,22 @@
+# Locked cohort protocol (SAP section 1). Change only via a versioned amendment
+# recorded in docs/protocol_amendments.md, BEFORE any outcome analysis.
+version: 0.1-synthetic
+accrual_start: "2016-01-01"     # placeholder: finalise after ICES feasibility
+accrual_end:   "2019-06-30"
+data_end:      "2020-06-30"
+holdout_from_year: 2019         # later-calendar temporal validation cohort
+min_age: 65
+lookback_days: 730
+min_chronic: 2
+chronic_codes: ["250", "401", "428", "496", "585", "290", "714", "733"]  # SYNTHETIC stand-ins
+transfer_gap_days: 1
+# same-day sequence (SAP section 1); sensitivity uses contact_first
+same_day_order: ["adm", "dis", "enc", "dth", "cens"]
+same_day_order_sensitivity: ["enc", "adm", "dis", "dth", "cens"]
+covariates:
+  transitions: ["age_s", "male", "comorb_s", "prior_util_s"]
+  encounter:   ["prior_util_s", "comorb_s"]
+indicators:
+  y1: "Heart-failure decompensation"
+  y2: "COPD exacerbation / respiratory failure"
+  y3: "Delirium / acute confusion"
