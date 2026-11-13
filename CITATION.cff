@@ -2,8 +2,12 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "hmsm: Bayesian latent multi-state methods for health-care trajectories in older adults with multimorbidity"
 version: 0.1.0
+date-released: 2026-11-13
 authors:
-  - name: "[Statistics/biostatistics lead]"
-  - name: "[Clinical/health-services lead]"
-  - name: "[Shared trainee]"
+  - family-names: Islam
+    given-names: Md Tariqul
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
 license: MIT
+repository-code: "https://github.com/mtariqi/canssi-hidden-msm"
+abstract: "Continuous-time hidden multi-state model for health-care trajectories from linked administrative data, correcting for diagnostic misclassification and informative observation. Includes simulation study, synthetic ICES-style pipeline, temporal validation and budget plan. Synthetic data only."
+keywords: [multi-state models, hidden Markov models, health administrative data, Bayesian, informative observation]
